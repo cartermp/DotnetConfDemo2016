@@ -4,7 +4,15 @@ This is the demo I was using in the F# talk.
 
 It extends the [ASP.NET Music Store](https://github.com/aspnet/musicstore) application to include a project which sends album details to a Cassandra cluster using F#!  The F# project which does this is under `src/MusicStore.Cassandra`.
 
-I've modified the music store project to be fixed to .NET Core RC2 packages.
+I've modified the music store project to be fixed to .NET Core RC2.
+
+## Component Overview
+
+- The MusicStore app, an ASP.NET Core web application which sends an HTTP Put to the AnalyticsAPI
+- AnalyticsApi, an ASP.NET Web Api 2 project which calls the F# code
+- MusicStore.Cassandra, the F# project which talks to a Cassandra cluster
+
+Most of the interesting stuff is in MusicStore.Cassandra.
 
 ## Prerequisites: Cassandra
 
