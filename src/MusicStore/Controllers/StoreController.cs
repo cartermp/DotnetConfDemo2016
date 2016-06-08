@@ -89,9 +89,14 @@ namespace MusicStore.Controllers
 
             var analyticsUrl = $"http://localhost:52119/api/send?id={id}&name={album.Title}&cached={wasCached}&time={DateTimeOffset.Now.ToString()}";
 
+
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+
             // It's okay to not await this, since it's just sending data to another service
             // Also, there's no content.  We can embed everything in the URI.
             _httpClient.PutAsync(analyticsUrl, null);
+
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
             
             return View(album);
         }
