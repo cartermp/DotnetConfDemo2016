@@ -1,0 +1,27 @@
+{
+  "buildOptions": {
+    "warningsAsErrors": true
+  },
+  "dependencies": {
+    "dotnet-test-xunit": "1.0.0-*",
+    "Microsoft.Extensions.Logging.Testing": "1.0.0-*",
+    "MusicStore": "1.0.0-*",
+    "XUnit": "2.1.0"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dnxcore50",
+        "portable-net451+win8"
+      ],
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "version": "1.0.0-*",
+          "type": "platform"
+        }
+      }
+    },
+    "net451": {}
+  },
+  "testRunner": "xunit"
+}
