@@ -73,8 +73,9 @@ I chose to have a Cassandra cluster run in a Docker VM on my local machine.  Her
 	
 9. Cassandra will communicate over Docker Port 9042.  Set the IP Port to a number you feel is appropriate.  I chose 8881, just like in the blog post I've linked above.
 
-[image goes here]
-
+![](mac-kinematic-config.png)
+	
+	
 And that's it!
 
 ## Setting the IP Address and Port in the AnalyticsApi config file:
