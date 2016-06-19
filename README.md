@@ -1,6 +1,6 @@
 # .NET Conf Demo 2016
 
-This is the demo I was using in the F# talk.
+This is the demo I was using in the [F# talk for DotnetConf](https://channel9.msdn.com/events/dotnetConf/2016/F-for-the-Practical-Developer).
 
 It extends the [ASP.NET Music Store](https://github.com/aspnet/musicstore) application to include a project which sends album details to a Cassandra cluster using F#!  The F# project which does this is under `src/MusicStore.Cassandra`.
 
